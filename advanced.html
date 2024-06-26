@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <form action="https://www.google.com/search" class="h-screen bg-black">
+        <div class="h-screen">
+            <div class="h-36 p-0 top-2 right-10 absolute">
+              <a
+                href="index.html"
+                class="text-xs font-mediu m font-family:Arial text-white dark:text-white-500 hover:underline m-2"
+                >Google Search</a
+              >
+              <a
+                href="advanced.html"
+                class="text-xs font-mediu m font-family:Arial text-white dark:text-white-500 hover:underline"
+                >Advanced Search</a
+              >
+            </div>
+      <div class="grid grid-wrap">
+        <div>
+          <h1
+            class="p-3 pl-5 text-xl tracking-tight text-white-900 dark:text-white"
+          >
+            Google
+          </h1>
+        </div>
+        <div>
+          <h1
+            class="p-3 pl-10 text-l tracking-tight text-red-400 dark:text-red"
+          >
+            Advanced Search
+          </h1>
+        </div>
+        <div class="ml-7 relative overflow-x-auto font-light">
+          <table class="w-full text-sm text-left rtl:text-right text-white">
+            <thead class="text-xs text-white">
+              <tr>
+                <th scope="col" class="font-medium px-6 py-3">
+                  Find pages with...
+                </th>
+                <th scope="col" class="px-6 py-3"></th>
+                <th scope="col" class="px-6 py-3">
+                  To do this in the search box
+                </th>
+              </tr>
+            </thead>
+            <tbody class="font-light">
+              <tr class="dark:bg-white-800 dark:border-white-700">
+                <th
+                  scope="row"
+                  class="font-light px-4 py-2 font-small text-white"
+                >
+                  all these words:
+                </th>
+                <td class="px-4 py-2">
+                  <input
+                    type="text"
+                    id="base-input"
+                    name="as_q"
+                    class="text-xs w-auto h-auto border bg-transparent p-0.5 font-light text-xs"
+                  />
+                </td>
+                <td class="px-4 py-2">
+                  Type the important words: tricolor rat terrier
+                </td>
+              </tr>
+              <tr class="dark:bg-white-800 dark:border-white-700">
+                <th
+                  scope="row"
+                  class="font-light px-4 py-2 font-small text-white"
+                >
+                  this exact word or phrase:
+                </th>
+                <td class="px-4 py-2">
+                  <input
+                    type="text"
+                    id="base-input"
+                    name="as_epq"
+                    class="text-xs p-0.5 w-auto h-auto border bg-transparent"
+                  />
+                </td>
+                <td class="px-4 py-2">
+                  Put exact words in quotes: "rat terrier"
+                </td>
+              </tr>
+              <tr class="dark:bg-white-800 dark:border-white-700">
+                <th
+                  scope="row"
+                  class="font-light px-4 py-2 font-small text-white"
+                >
+                  any of these words:
+                </th>
+                <td class="px-4 py-2">
+                  <input
+                    type="text"
+                    id="base-input"
+                    name="as_oq"
+                    class="text-xs p-0.5 w-auto h-auto border bg-transparent"
+                  />
+                </td>
+                <td class="px-4 py-2">
+                  Type OR between all the words you want: miniature OR standard
+                </td>
+              </tr>
+              <tr class="dark:bg-white-800 dark:border-white-700">
+                <th
+                  scope="row"
+                  class="px-4 py-2 font-small text-white font-light"
+                >
+                  none of these words
+                </th>
+                <td class="px-4 py-2">
+                  <input
+                    type="text"
+                    id="base-input"
+                    name="as_eq"
+                    class="text-xs p-0.5 w-auto h-auto border bg-transparent"
+                  />
+                </td>
+                <td class="px-4 py-2">
+                  Put a minus sign just before words you don't want: -rodent,
+                  -"Jack Russell"
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex flex-wrap items-center justify-center pr-36 pt-10">
+          <input
+            type="submit"
+            value="Google Search"
+            class="justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 mt-5 ml-32 dark:focus:ring-blue-800 h-10 w-32"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
